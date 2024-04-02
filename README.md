@@ -50,9 +50,11 @@ Multivariate Analysis
 Analisis Multivariat merupakan jenis analisis data yang terdapat dalam lebih dari dua variabel. Jenis visualisasi ini digunakan untuk merepresentasikan hubungan dan pola yang terdapat dalam multidimensional data. Berikut adalah visualisasi EDA dari Analisis Multivariate
 
 ![image](https://github.com/daffahadyan/Effeciency-Energy-Analysis/assets/165827077/b65c4ca9-d530-4601-864e-8271ae1375b1)
+
 Gambar 2. Analisis Multivariate
 
 ![image](https://github.com/daffahadyan/Effeciency-Energy-Analysis/assets/165827077/67a2f598-0c46-40b1-a516-0d64278dc796)
+
 Gambar 3. Correlation Map
 
 
@@ -70,12 +72,14 @@ Interpolation (metode menghasilkan titik-titik data baru dalam suatu jangkauan d
 
 ## Outlier
 ![image](https://github.com/daffahadyan/Effeciency-Energy-Analysis/assets/165827077/31496389-0608-41fb-b364-041729a3b8a5)
+
 Gambar 4. Box Plot
 Berdasarkan box plot diatas, tidak ditemukanya outlier pada dataset. Hal ini menandakan bahwa dataset memiliki persebaran data yang bagus.
 
 ## Reduction With PCA
 Reduksi dimensi dengan PCA (Principal Component Analysis) adalah teknik yang digunakan untuk mengurangi jumlah fitur (variabel) dalam dataset, tetapi tetap mempertahankan sebanyak mungkin informasi yang mungkin. Berdasarkan analisis multivariat yang dilakukan, diketahui bahwa terdapat korelasi antara heating load dan cooling load Sehingga, dilakukan reduksi PCA pada fitur-fitur tersebut.
 ![image](https://github.com/daffahadyan/Effeciency-Energy-Analysis/assets/165827077/9561badf-2ded-4b69-a04c-6bd14eebd389)
+
 Gambar 5. Visualisasi Hubungan antara Heating load dengan Cooling Load
 
 ## Modeling
@@ -101,7 +105,34 @@ Secara khusus, metode regresi sering digunakan untuk memprediksi atau meramalkan
 Kemudahan untuk digunakan
 Kekuatan Prediktor dalam mengidentifikasi sekuat apa pengaruh yang diberikan oleh variabel prediktor (variabel independen) terhadap variabel lainnya (variabel dependen).
 Dapat memprediksi nilai/tren di masa yang mendatang
-Kelemahan dari model regresi adalah karena hasil ramalan dari analisis regresi merupakan nilai estimasi sehingga kemungkinan untuk tidak sesuai dengan data aktual tetaplah ada.
+Kelemahan dari model regresi adalah karena hasil ramalan dari analisis regresi merupakan nilai estimasi sehingga kemungkinan untuk tidak sesuai dengan data aktual tetaplah ada. 
+
+
+## Evaluation
+Adapun metrik yang sebagai alat ukur perfoma model yang dibuat antara lain **MSE · MAE · R<sup>2</sup>**. 
+
+Berikut merupakan rumus dari masing-masing metrik yang digunakan:
+
+$$ MAE = (1/n) Σ |y<sub>i</sub> - ŷ<sub>i</sub>| $$
+
+$$ MSE = (1/n) Σ (y<sub>i</sub> - ŷ<sub>i</sub>)<sup>2</sup> $$
+
+$$ R<sup>2</sup> = 1 - (MSE / Var(y)) $$
+
+y<sub>i</sub> mewakili nilai yang diamati,
+ŷ<sub>i</sub> mewakili nilai prediksi,
+n adalah jumlah titik data,
+Var(y) mewakili varians dari nilai yang diamati.
+
+Berikut merupakan penjelasan kegunaan dari masing-masing metrik yang digunakan:
+- MAE menghitung rata-rata dari selisih absolut antara nilai prediksi dan nilai aktual. Semakin kecil nilai MAE, semakin baik kualitas model tersebut.
+- MSE menghitung rata-rata dari selisih kuadrat antara nilai prediksi dan nilai aktual. Semakin kecil nilai MSE, semakin baik kualitas model tersebut.
+- R<sup>2</sup> digunakan untuk menilai seberapa besar pengaruh variabel independen tertentu terhadap variabel dependen
+
+
+
+![image](https://github.com/daffahadyan/Effeciency-Energy-Analysis/assets/165827077/a3010016-ea62-4b01-985b-f4cce54b7772)
+
 
 
 
