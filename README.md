@@ -4,11 +4,8 @@
 ## Latar belakang
 Efisiensi energi merupakan topik yang terus dibahas di era modern. Meningkatnya konsumsi energi membuat sumber energi semakin berkurang. Dengan permasalahan itu, diperlukan solusi untuk mengatasi keterbatasan sumber energi. Salah satu cara untuk mengatasi hal tersebut adalah dengan menghemat energi dari skala terkecil. Efisiensi energi Efisiensi energi bukan hanya tentang penghematan energi, tetapi juga tentang penggunaan energi yang lebih cerdas dan bertanggung jawab. Hal ini dapat dicapai dengan berbagai cara, seperti mengubah perilaku, menggunakan teknologi yang lebih efisien, dan meningkatkan kesadaran.
 
-## Problem Statements
-* Menganalisis Faktor-Faktor yang Mempengaruhi Beban Pemanasan dan Pendinginan
-* 
-
-  
+## Business Understanding
+Permasalahan energi memunculkan kesempatan baru, yaitu dibutuhkanya konsultan bangunan untuk mengetahui ukuran, bahan rumah yang akan dipakai nanti untuk mereduksi penggunaan energi
 
 ## Data Understanding
 * Relative Compactness: This is the relative compactness of the building, which is defined as the ratio of the building's volume to the volume of an equivalent cuboid that encloses the building. This variable ranges from 0.62 to 0.98.
@@ -85,14 +82,7 @@ Gambar 5. Visualisasi Hubungan antara Heating load dengan Cooling Load
 ## Modeling
 Model yang digunakan untuk memprediksi kegagalan mesin adalah model regresi. Dalam bentuk yang sederhana, regresi terdiri dari intersep dan slope yang dituliskan dalam rumusan berikut:
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mi>y</mi>
-  <mo>=</mo>
-  <mi>a</mi>
-  <mo>+</mo>
-  <mi>b</mi>
-  <mi>X</mi>
-</math>
+$$ y = a + bX $$
 
 dimana:
 
@@ -133,6 +123,7 @@ Berikut merupakan penjelasan kegunaan dari masing-masing metrik yang digunakan:
 
 ![image](https://github.com/daffahadyan/Effeciency-Energy-Analysis/assets/165827077/a3010016-ea62-4b01-985b-f4cce54b7772)
 
+Berdasarkan gambar diatas, model yang paling cocok untuk digunakan dalam data ini aadalah random forest 
 
 
 
